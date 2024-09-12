@@ -1,0 +1,68 @@
+.pf-v5-c-page__header-tools-item {
+    @apply mr-5 !important;
+}
+
+.pf-v5-c-page__header-tools-item {
+    @apply hidden !important;
+}
+
+.pf-v5-c-page__header {
+    @apply bg-white !important;
+}
+
+.pf-v5-c-button {
+    @apply text-gray-800 !important;
+}
+
+.pf-v5-c-page__sidebar-body {
+    @apply bg-white !important;
+}
+
+.pf-v5-c-nav__link {
+    @apply text-gray-800 !important;
+}
+
+.pf-v5-c-nav__link:hover {
+    @apply text-gray-50 !important;
+}
+
+.pf-v5-c-nav__toggle-icon {
+    @apply text-gray-800 !important;
+}
+
+.pf-v5-c-nav__link.pf-m-current {
+    @apply bg-gray-100 !important;
+}
+
+.pf-v5-c-nav__link.pf-m-current, .pf-v5-c-nav__link.pf-m-current:hover, .pf-v5-c-nav__item.pf-m-current:not(.pf-m-expanded) .pf-v5-c-nav__link { 
+    @apply bg-gray-100 !important;
+}
+
+/* Aria expaned true */
+.pf-v5-c-nav__link[aria-expanded="true"] {
+    @apply bg-gray-100 !important;
+}
+
+.pf-v5-c-nav__link:hover {
+    @apply text-gray-800 bg-gray-100 !important;
+}
+
+.pf-v5-c-button[type="submit"] {
+    @apply text-white rounded-lg !important;
+}
+
+.pf-v5-svg {
+    @apply ml-2 !important;
+}
+
+.delete-button {
+    @apply text-white rounded-lg !important;
+}
+
+.pf-m-danger {
+    @apply text-white rounded-lg !important;
+}
+
+.pf-v5-c-alert__description {
+    @apply text-gray-800 !important;
+}
