@@ -10,9 +10,9 @@
 
 import { lazy, Suspense, type ReactNode } from "react";
 
-export type ThemeName = "keycloakify-starter";
+export type ThemeName = "evolus-identity-dev";
 
-export const themeNames: ThemeName[] = ["keycloakify-starter"];
+export const themeNames: ThemeName[] = ["evolus-identity-dev"];
 
 export type KcEnvName = never;
 
@@ -21,7 +21,6 @@ export const kcEnvNames: KcEnvName[] = [];
 export const kcEnvDefaults: Record<KcEnvName, string> = {};
 
 export type KcContext =
-    | import("./login/KcContext").KcContext
     | import("./account/KcContext").KcContext
     ;
 
@@ -31,7 +30,6 @@ declare global {
     }
 }
 
-export const KcLoginPage = lazy(() => import("./login/KcPage"));
 export const KcAccountPage = lazy(() => import("./account/KcPage"));
 
 export function KcPage(
@@ -45,7 +43,6 @@ export function KcPage(
         <Suspense fallback={fallback}>
             {(() => {
                 switch (kcContext.themeType) {
-                    case "login": return <KcLoginPage kcContext={kcContext} />;
                     case "account": return <KcAccountPage kcContext={kcContext} />;
                 }
             })()}

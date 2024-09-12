@@ -6,6 +6,6 @@ import { keycloakify } from "keycloakify/vite-plugin";
 export default defineConfig({
     plugins: [react(), keycloakify({
         accountThemeImplementation: "Single-Page",
-        themeName: "evolus-identity",
+        themeName: "evolus-identity-dev",
     })]
 });
